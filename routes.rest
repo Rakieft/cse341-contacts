@@ -1,0 +1,13 @@
+### Localhost - Get all contacts
+GET http://localhost:8080/contacts
+
+### Localhost - Get contact by ID
+GET http://localhost:8080/contacts/69b0e59d9be29339dad7438a
+
+
+
+### Render - Get all contacts
+GET https://cse341-contacts-8bwb.onrender.com/contacts
+
+### Render - Get contact by ID
+GET https://cse341-contacts-8bwb.onrender.com/contacts/69b0e59d9be29339dad7438a
