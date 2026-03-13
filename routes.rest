@@ -11,3 +11,40 @@ GET https://cse341-contacts-8bwb.onrender.com/contacts
 
 ### Render - Get contact by ID
 GET https://cse341-contacts-8bwb.onrender.com/contacts/69b0e59d9be29339dad7438a
+
+### Get all contacts
+GET http://localhost:8080/contacts
+
+
+### Get single contact
+GET http://localhost:8080/contacts/ID_HERE
+
+
+### Create contact
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+ "firstName": "Paul",
+ "lastName": "Pierre",
+ "email": "paul@email.com",
+ "favoriteColor": "Yellow",
+ "birthday": "2000-05-20"
+}
+
+
+### Update contact
+PUT http://localhost:8080/contacts/ID_HERE
+Content-Type: application/json
+
+{
+ "firstName": "Paul",
+ "lastName": "Pierre",
+ "email": "paulnew@email.com",
+ "favoriteColor": "Black",
+ "birthday": "2000-05-20"
+}
+
+
+### Delete contact
+DELETE http://localhost:8080/contacts/ID_HERE
