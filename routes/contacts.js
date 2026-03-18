@@ -66,14 +66,31 @@ router.post("/", contactsController.createContact);
  * /contacts/{id}:
  *   put:
  *     summary: Update contact
+ *     description: Update an existing contact by ID
  *     parameters:
  *       - in: path
  *         name: id
  *         required: true
+ *         description: Contact ID
  *         schema:
  *           type: string
  *     requestBody:
  *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               firstName:
+ *                 type: string
+ *               lastName:
+ *                 type: string
+ *               email:
+ *                 type: string
+ *               favoriteColor:
+ *                 type: string
+ *               birthday:
+ *                 type: string
  *     responses:
  *       204:
  *         description: Contact updated
